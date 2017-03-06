@@ -23,10 +23,10 @@ RUN cd /opt/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/BatchUserRights.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/HeaderTabs.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiEditor.git \
-    && git clone https://github.com/jamesmontalvo3/MediaWiki-CopyWatchers.git \
+    && git clone https://github.com/jamesmontalvo3/MediaWiki-CopyWatchers.git CopyWatchers \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/SyntaxHighlight_GeSHi.git \
     && git clone https://github.com/enterprisemediawiki/Wiretap.git \
-    && git clone https://github.com/jamesmontalvo3/MediaWiki-ApprovedRevs.git \
+    && git clone https://github.com/jamesmontalvo3/MediaWiki-ApprovedRevs.git ApprovedRevs \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/InputBox.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ReplaceText.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Interwiki.git \
@@ -35,7 +35,7 @@ RUN cd /opt/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Variables.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/YouTube.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionScores.git \
-    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git \
+    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git PipeEscape\
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UniversalLanguageSelector.git \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Elastica.git \
