@@ -5,7 +5,7 @@ ENV container=docker
 RUN mkdir -p /opt/htdocs \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /opt/htdocs/mediawiki
 
-RUN cd /opt/mediawiki/extensions \
+RUN cd /opt/htdocs/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/StringFunctionsEscaped.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ExternalData.git \
