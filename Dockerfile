@@ -2,9 +2,10 @@ FROM jamesmontalvo3/meza-docker-pre-yum:latest
 MAINTAINER James Montalvo
 ENV container=docker
 
-RUN git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /opt/mediawiki
+RUN mkdir -p /opt/htdocs \
+    && git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /opt/htdocs/mediawiki
 
-RUN cd /opt/mediawiki/extensions \
+RUN cd /opt/htdocs/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/StringFunctionsEscaped.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ExternalData.git \
@@ -35,7 +36,7 @@ RUN cd /opt/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Variables.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/YouTube.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionScores.git \
-    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git PipeEscape\
+    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git PipeEscape \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UniversalLanguageSelector.git \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Elastica.git \
