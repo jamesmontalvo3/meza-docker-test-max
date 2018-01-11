@@ -14,7 +14,7 @@ RUN cd /opt/htdocs/mediawiki/extensions \
     && git clone https://github.com/enterprisemediawiki/ParserFunctionHelper.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/WhoIsWatching.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CharInsert.git \
-    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticForms.git \
+    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/PageForms.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticInternalObjects.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticCompoundQueries.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Arrays.git \
@@ -45,5 +45,13 @@ RUN cd /opt/htdocs/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/UploadWizard \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/CollapsibleVector \
-    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Math.git \
+    && git clone https://github.com/jamesmontalvo3/SimpleMathJax.git \
+    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ImageMap \
+    && git clone https://github.com/enterprisemediawiki/MezaExt.git \
+    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticDrilldown.git \
+    && git clone https://github.com/enterprisemediawiki/ImagesLoaded.git \
+    && git clone https://github.com/enterprisemediawiki/PageImporter.git \
+    && git clone https://github.com/enterprisemediawiki/SemanticMeetingMinutes.git \
+    && git clone https://github.com/enterprisemediawiki/HeaderFooter.git \
+    && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/NumerAlpha.git \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DataTransfer.git
