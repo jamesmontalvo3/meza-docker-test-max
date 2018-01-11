@@ -2,7 +2,8 @@ FROM jamesmontalvo3/meza-docker-pre-yum:latest
 MAINTAINER James Montalvo
 ENV container=docker
 
-RUN git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /opt/mediawiki
+RUN mkdir -p /opt/htdocs \
+    && git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git /opt/htdocs/mediawiki
 
 RUN cd /opt/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions.git \
