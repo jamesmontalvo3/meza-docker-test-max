@@ -36,7 +36,7 @@ RUN cd /opt/mediawiki/extensions \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Variables.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/YouTube.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionScores.git \
-    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git PipeEscape\
+    && git clone https://github.com/jamesmontalvo3/MediaWiki-PipeEscape.git PipeEscape \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UniversalLanguageSelector.git \
     && git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git \
     && git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Elastica.git \
